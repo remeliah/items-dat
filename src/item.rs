@@ -5,6 +5,9 @@ pub struct ItemsDat {
     pub items: Vec<Item>,
 }
 
+/// All names took from [Growtools] as reference.
+/// 
+/// [Growtools]: https://github.com/xSkriptx/Growtools/blob/5d1aaf76c93e82141a06b74968038daa1a7ed812/pages/dat-decoder.html#L711
 #[derive(Debug, Default)]
 pub struct Item {
     pub id: u32,
