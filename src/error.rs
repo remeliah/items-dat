@@ -12,9 +12,9 @@ impl fmt::Display for ItemsDatError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
             ItemsDatError::Io(e) => write!(f, "IO error: {e}"),
-            ItemsDatError::UnexpectedEof => write!(f, "unexpected end of file"),
-            ItemsDatError::ParseError(msg) => write!(f, "parse error: {msg}"),
-            ItemsDatError::DecompressionError(msg) => write!(f, "decompression error: {msg}"),
+            ItemsDatError::UnexpectedEof => write!(f, "Unexpected end of file"),
+            ItemsDatError::ParseError(msg) => write!(f, "Parse error: {msg}"),
+            ItemsDatError::DecompressionError(msg) => write!(f, "Decompression error: {msg}"),
         }
     }
 }
